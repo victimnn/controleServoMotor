@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Servo - Feira Científica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">CONTROLE DE SERVO MOTOR</h1>
+
+        <div class="dados">
+            <div class="caixa">
+                <div class="label">ÂNGULO DO SERVO</div>
+                <div class="valor-grande" id="angulo">90°</div>
+                <div class="servo-visual">
+                    <div class="servo-arm" id="bracoServo"></div>
+                    <div class="servo-base"></div>
+                </div>
+            </div>
+
+            <div class="caixa">
+                <div class="label">POTENCIÔMETRO</div>
+                <div class="valor-pequeno" id="potenciometro">512</div>
+            </div>
+        </div>
+
+        <div class="barra-container">
+            <div class="barra" id="barra">50%</div>
+        </div>
+
+        <div class="instrucao">
+            Gire o potenciômetro para controlar o servo motor!
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

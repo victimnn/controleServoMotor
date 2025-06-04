@@ -1,0 +1,5 @@
+#include <Servo.h>
+
+const int PIN_SERVO = 9, PIN_POTENCIOMETRO = A0, ANGULO_MINIMO = 0, ANGULO_MAXIMO = 179, LEITURA_MIN_PO = 0, LEITURA_MAX_PO = 1023;
+
+int leituraPotenciometro = 0, anguloServo = 0;
